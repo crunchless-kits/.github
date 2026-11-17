@@ -8,11 +8,11 @@ It comes in three editions: a free core under MIT, Builder ($10, one time), and 
 
 - `/cl-core:cl-audit` (free) returns a ranked list of what to fix in your game, with file paths.
 - `/cl-core:cl-ship` (free) gives one ship or no-ship decision, with the evidence behind each line.
-- `/cl-core:cl-port` (Builder) wires the game to a web portal such as Poki or CrazyGames, checked against the portal's own docs. Then a preflight boots the game in a fake browser and tests 20 portal rules.
+- `/cl-core:cl-port` (Builder) wires the game to a web portal such as Poki or CrazyGames, checked against the portal's own docs. Then a preflight boots the game in a fake browser and tests 22 portal rules.
 
 ### Benchmark
 
-One task, run in Claude Code with and without the kit: get a small web game ready for the Poki portal. Nine of ten builds made with the Builder edition passed all 24 readiness checks. None of the ten made without the kit did. The Builder preflight tests 20 of those 24 rules, which is most of the gap, and [the report](https://github.com/crunchless-kits/agentic-gamedev/blob/main/docs/benchmarks/ship-to-poki/REPORT.md) says so. The free core wasn't benchmarked.
+One task, run in Claude Code with and without the kit: get a small web game ready for the Poki portal. Nine of ten builds made with the Builder edition passed all 24 readiness checks. None of the ten made without the kit did. In the version benchmarked, the Builder preflight tested 20 of those 24 rules, which is most of the gap, and [the report](https://github.com/crunchless-kits/agentic-gamedev/blob/main/docs/benchmarks/ship-to-poki/REPORT.md) says so. The free core wasn't benchmarked.
 
 ### Try It Free
 
