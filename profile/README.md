@@ -6,13 +6,13 @@ Crunchless installs into your coding agent as plugins and gives it tested proced
 
 It comes in three editions: a free core under MIT, Builder ($10, one time), and Studio ($100, one time). Three commands show how it works:
 
-- `/cl-core:cl-audit` (free) returns a ranked list of what to fix in your game, with file paths.
+- `/cl-core:cl-audit` (free) ranks what to fix in your game.
 - `/cl-core:cl-ship` (free) gives one ship or no-ship decision, with the evidence behind each line.
 - `/cl-core:cl-port` (Builder) wires the game to a web portal such as Poki or CrazyGames, checked against the portal's own docs. Then a preflight boots the game in a fake browser and tests 22 portal rules.
 
 ### Benchmark
 
-One task, run in Claude Code with and without the kit: get a small web game ready for the Poki portal. Nine of ten builds made with the Builder edition passed all 24 readiness checks. None of the ten made without the kit did. In the version benchmarked, the Builder preflight tested 20 of those 24 rules, which is most of the gap, and [the report](https://github.com/crunchless-kits/agentic-gamedev/blob/main/docs/benchmarks/ship-to-poki/REPORT.md) says so. The free core wasn't benchmarked.
+Get a small web game ready for the Poki portal, ten times with the Builder edition and ten times without the kit, in Claude Code. With the kit, 10 of 10 builds passed every automated Poki check and 9 of 10 passed all 24 checks. Without it, none did either. Without the kit no agent ran the game; the kit's preflight runs the same 20 automated checks. The free core wasn't tested. [Rubric](https://github.com/crunchless-kits/agentic-gamedev/blob/main/docs/benchmarks/ship-to-poki/RUBRIC.md) and [report](https://github.com/crunchless-kits/agentic-gamedev/blob/main/docs/benchmarks/ship-to-poki/REPORT.md).
 
 ### Try It Free
 
